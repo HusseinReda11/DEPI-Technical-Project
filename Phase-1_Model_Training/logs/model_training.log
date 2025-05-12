@@ -1,0 +1,28 @@
+2025-05-12 06:06:44,135 - src.model.model_manager - INFO - Setting up model and tokenizer from distilbert-base-uncased
+2025-05-12 06:06:45,232 - src.model.model_manager - INFO - Partially freezing model (keeping only classifier and last transformer layer trainable)
+2025-05-12 06:06:45,235 - src.model.model_manager - INFO - Trainable parameters: 7,680,002 (11.47% of total)
+2025-05-12 06:06:45,235 - src.model.model_manager - INFO - Model size: 255.42 MB
+2025-05-12 06:06:45,235 - src.data.data_loader - INFO - Downloading dataset from raj713335/twittesentimentanalysis
+2025-05-12 06:06:45,712 - src.data.data_loader - INFO - Dataset downloaded to C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-12 06:06:45,712 - src.data.data_loader - INFO - Loading raw Twitter data
+2025-05-12 06:06:48,373 - src.data.data_loader - INFO - Loaded 1600000 tweets
+2025-05-12 06:06:48,374 - src.data.data_loader - INFO - Preparing data for training
+2025-05-12 06:06:48,607 - src.data.data_loader - INFO - Using 1600 samples after sampling
+2025-05-12 06:06:48,609 - src.data.data_loader - INFO - Split data: 1440 training samples, 160 validation samples
+2025-05-12 06:06:48,609 - src.data.data_loader - INFO - Created DataLoaders with 90 training batches and 5 validation batches
+2025-05-12 06:06:48,909 - src.training.trainer - INFO - 
+Epoch 1/3
+2025-05-12 06:06:56,012 - src.training.trainer - INFO - Epoch 1 Training Loss: 0.6798
+2025-05-12 06:06:56,560 - src.training.trainer - INFO - Epoch 1 Validation Loss: 0.6477, Accuracy: 70.62%
+2025-05-12 06:06:57,599 - src.training.trainer - INFO - Checkpoint saved: g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_1_20250512_060656.pt
+2025-05-12 06:06:57,760 - src.training.trainer - INFO - 
+Epoch 2/3
+2025-05-12 06:07:05,208 - src.training.trainer - INFO - Epoch 2 Training Loss: 0.6197
+2025-05-12 06:07:05,763 - src.training.trainer - INFO - Epoch 2 Validation Loss: 0.5662, Accuracy: 75.00%
+2025-05-12 06:07:07,121 - src.training.trainer - INFO - Checkpoint saved: g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_2_20250512_060705.pt
+2025-05-12 06:07:13,519 - src.training.trainer - INFO - 
+Epoch 3/3
+2025-05-12 06:07:21,596 - src.training.trainer - INFO - Epoch 3 Training Loss: 0.5630
+2025-05-12 06:07:22,149 - src.training.trainer - INFO - Epoch 3 Validation Loss: 0.5412, Accuracy: 75.00%
+2025-05-12 06:07:22,559 - src.training.trainer - INFO - Confusion matrix saved to g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\reports\figures\confusion_matrix.png
+2025-05-12 06:07:23,055 - src.training.trainer - INFO - Learning curves saved to g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\reports\figures\learning_curves.png

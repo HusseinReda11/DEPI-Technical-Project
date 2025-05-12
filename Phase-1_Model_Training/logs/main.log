@@ -1,0 +1,9 @@
+2025-05-12 06:06:42,963 - __main__ - INFO - Starting Twitter sentiment analysis model training
+2025-05-12 06:06:42,963 - __main__ - INFO - Configuration: {'max_len': 48, 'batch_size': 16, 'portion': 1000, 'epochs': 3, 'learning_rate': 2e-05, 'partial_freeze': True, 'num_warmup_steps_ratio': 0.1, 'weight_decay': 0.01, 'seed': 42, 'model_name': 'distilbert-base-uncased', 'num_labels': 2}
+2025-05-12 06:06:48,609 - __main__ - INFO - Using device: cuda
+2025-05-12 06:06:48,891 - __main__ - INFO - Starting training...
+2025-05-12 06:07:23,090 - __main__ - INFO - 
+Training completed successfully!
+2025-05-12 06:07:23,090 - __main__ - INFO - Final accuracy: 75.00%
+2025-05-12 06:07:23,091 - __main__ - INFO - Total training time: 34.19 seconds
+2025-05-12 06:07:23,197 - __main__ - INFO - Clean up completed

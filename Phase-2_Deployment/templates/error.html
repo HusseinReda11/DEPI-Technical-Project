@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Error</h1>
+    </div>
+    
+    <div id="container">
+        <div class="error">
+            <h2>{{ title }}</h2>
+            <p>{{ message }}</p>
+            <p><a href="/">Return to homepage</a></p>
+        </div>
+    </div>
+</body>
+</html>

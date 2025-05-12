@@ -1,0 +1,6 @@
+*.csv
+*.tar
+model_checkpoints
+__pycache__
+*.pt
+mlruns

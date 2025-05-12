@@ -1,0 +1,128 @@
+2025-05-12 04:00:47,918 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-12 04:00:47,920 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-12 04:00:48,569 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-12 04:00:48,570 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-12 04:00:51,493 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-12 04:00:51,493 - src.data.data_loader - INFO - Preprocessing data
+2025-05-12 04:00:58,273 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-12 04:00:58,600 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-12 04:00:58,600 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-12 04:00:58,600 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-12 04:00:58,601 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-12 04:00:58,601 - __main__ - INFO - Running text analysis
+2025-05-12 04:00:58,746 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-12 04:01:07,828 - src.exploration.text_analysis - INFO - Extracted 209182 unique words
+2025-05-12 04:01:12,248 - src.exploration.text_analysis - INFO - Extracted 139889 unique words
+2025-05-12 04:01:16,813 - src.exploration.text_analysis - INFO - Extracted 127329 unique words
+2025-05-12 04:01:16,816 - src.exploration.text_analysis - INFO - Analyzed word frequencies: 209182 total, 139889 positive, 127329 negative
+2025-05-12 04:02:01,095 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 5797503 unique patterns
+2025-05-12 04:02:28,569 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 11172676 unique patterns
+2025-05-12 04:02:31,579 - src.exploration.text_analysis - INFO - Extracted 12091 unique hashtags
+2025-05-12 04:02:32,646 - src.exploration.text_analysis - INFO - Extracted 7623 unique hashtags
+2025-05-12 04:02:33,867 - src.exploration.text_analysis - INFO - Extracted 6363 unique hashtags
+2025-05-12 04:02:38,949 - src.exploration.text_analysis - INFO - Extracted 343646 unique mentions
+2025-05-12 04:02:40,791 - src.exploration.text_analysis - INFO - Extracted 229963 unique mentions
+2025-05-12 04:02:42,433 - src.exploration.text_analysis - INFO - Extracted 178958 unique mentions
+2025-05-12 04:03:03,019 - src.exploration.text_analysis - INFO - Analyzed punctuation usage across sentiments
+2025-05-12 04:03:06,112 - src.exploration.text_analysis - INFO - Analyzed URL usage: 801066 in positive, 800388 in negative
+2025-05-12 04:03:25,967 - src.exploration.text_analysis - INFO - Analyzed capitalization usage: 0.0650 in positive, 0.0588 in negative
+2025-05-12 04:03:25,968 - src.exploration.text_analysis - INFO - Completed all text analyses
+2025-05-12 04:03:25,968 - __main__ - INFO - Running time analysis
+2025-05-12 04:03:25,968 - src.exploration.time_analysis - INFO - TimeAnalyzer initialized with 1600000 tweets
+2025-05-12 04:03:25,975 - src.exploration.time_analysis - INFO - Dataset time range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-12 04:03:29,460 - src.exploration.time_analysis - INFO - Analyzed sentiment by hour
+2025-05-12 04:03:32,140 - src.exploration.time_analysis - INFO - Analyzed sentiment by day of week
+2025-05-12 04:03:34,718 - src.exploration.time_analysis - INFO - Analyzed sentiment by month
+2025-05-12 04:03:34,718 - src.exploration.time_analysis - INFO - Completed all time-based analyses
+2025-05-12 04:03:34,718 - __main__ - INFO - Running user analysis
+2025-05-12 04:03:35,009 - src.exploration.user_analysis - INFO - UserAnalyzer initialized with 1600000 tweets from 659775 users
+2025-05-12 04:03:35,286 - src.exploration.user_analysis - INFO - Found 659775 unique users
+2025-05-12 04:03:35,907 - src.exploration.user_analysis - INFO - Retrieved top 10 users by frequency
+2025-05-12 04:03:40,985 - src.exploration.user_analysis - INFO - Analyzed sentiment patterns for top 10 users
+2025-05-12 04:03:45,333 - src.exploration.user_analysis - INFO - Calculated sentiment ratios for 659775 users
+2025-05-12 04:03:49,572 - src.exploration.user_analysis - INFO - Calculated sentiment ratios for 659775 users
+2025-05-12 04:03:49,582 - src.exploration.user_analysis - INFO - Found 16642 mostly positive users and 14938 mostly negative users
+2025-05-12 04:03:49,599 - src.exploration.user_analysis - INFO - Completed all user-based analyses
+2025-05-12 04:03:49,599 - __main__ - INFO - Saving processed data
+2025-05-12 04:03:59,858 - __main__ - INFO - Data exploration completed in 0:03:11.938046
+2025-05-12 12:09:06,600 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-12 12:09:06,614 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-12 12:09:07,294 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-12 12:09:07,295 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-12 12:09:10,600 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-12 12:09:10,600 - src.data.data_loader - INFO - Preprocessing data
+2025-05-12 12:09:18,497 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-12 12:09:18,829 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-12 12:09:18,830 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-12 12:09:18,831 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-12 12:09:18,832 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-12 12:09:18,832 - __main__ - INFO - Running text analysis
+2025-05-12 12:09:19,008 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-12 12:09:19,008 - src.exploration.text_analysis - INFO - Running text analyses without stop words
+2025-05-12 12:09:27,909 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:09:28,730 - src.exploration.text_analysis - INFO - Extracted 208988 unique words
+2025-05-12 12:09:33,947 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:09:34,364 - src.exploration.text_analysis - INFO - Extracted 139697 unique words
+2025-05-12 12:09:38,867 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:09:39,285 - src.exploration.text_analysis - INFO - Extracted 127138 unique words
+2025-05-12 12:09:39,359 - src.exploration.text_analysis - INFO - Analyzed word frequencies: 208988 total, 139697 positive, 127138 negative
+2025-05-12 12:10:26,929 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-12 12:10:51,808 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-12 12:10:52,329 - __main__ - ERROR - Error during data exploration: 'TextAnalyzer' object has no attribute 'extract_hashtags'
+Traceback (most recent call last):
+  File "g:/Projects/Programming/Python Play Ground/DEPI/Twitter Sentiment Analysis/Phase-0_Data_Exploration/main.py", line 54, in main
+    text_results = text_analyzer.run_all_analyses(
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\exploration\text_analysis.py", line 250, in run_all_analyses
+    all_hashtags_df = self.extract_hashtags()
+AttributeError: 'TextAnalyzer' object has no attribute 'extract_hashtags'
+2025-05-12 12:17:23,807 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-12 12:17:23,809 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-12 12:17:24,332 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-12 12:17:24,333 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-12 12:17:27,675 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-12 12:17:27,676 - src.data.data_loader - INFO - Preprocessing data
+2025-05-12 12:17:34,923 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-12 12:17:35,231 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-12 12:17:35,231 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-12 12:17:35,232 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-12 12:17:35,232 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-12 12:17:35,232 - __main__ - INFO - Running text analysis
+2025-05-12 12:17:35,374 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-12 12:17:35,375 - src.exploration.text_analysis - INFO - Running text analyses without stop words
+2025-05-12 12:17:44,996 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:17:45,799 - src.exploration.text_analysis - INFO - Extracted 208988 unique words
+2025-05-12 12:17:49,991 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:17:50,399 - src.exploration.text_analysis - INFO - Extracted 139697 unique words
+2025-05-12 12:17:54,766 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-12 12:17:55,170 - src.exploration.text_analysis - INFO - Extracted 127138 unique words
+2025-05-12 12:17:55,241 - src.exploration.text_analysis - INFO - Analyzed word frequencies: 208988 total, 139697 positive, 127138 negative
+2025-05-12 12:18:36,748 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-12 12:19:04,458 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-12 12:19:09,698 - src.exploration.text_analysis - INFO - Extracted 12091 unique hashtags
+2025-05-12 12:19:10,761 - src.exploration.text_analysis - INFO - Extracted 7623 unique hashtags
+2025-05-12 12:19:12,039 - src.exploration.text_analysis - INFO - Extracted 6363 unique hashtags
+2025-05-12 12:19:17,951 - src.exploration.text_analysis - INFO - Extracted 343646 unique mentions
+2025-05-12 12:19:20,576 - src.exploration.text_analysis - INFO - Extracted 229963 unique mentions
+2025-05-12 12:19:22,917 - src.exploration.text_analysis - INFO - Extracted 178958 unique mentions
+2025-05-12 12:19:45,638 - src.exploration.text_analysis - INFO - Analyzed punctuation usage across sentiments
+2025-05-12 12:19:49,838 - src.exploration.text_analysis - INFO - Analyzed URL usage: 801066 in positive, 800388 in negative
+2025-05-12 12:20:15,116 - src.exploration.text_analysis - INFO - Analyzed capitalization usage: 0.0650 in positive, 0.0588 in negative
+2025-05-12 12:20:15,117 - src.exploration.text_analysis - INFO - Completed all text analyses
+2025-05-12 12:20:15,117 - __main__ - INFO - Running time analysis
+2025-05-12 12:20:15,119 - src.exploration.time_analysis - INFO - TimeAnalyzer initialized with 1600000 tweets
+2025-05-12 12:20:15,132 - src.exploration.time_analysis - INFO - Dataset time range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-12 12:20:19,828 - src.exploration.time_analysis - INFO - Analyzed sentiment by hour
+2025-05-12 12:20:22,595 - src.exploration.time_analysis - INFO - Analyzed sentiment by day of week
+2025-05-12 12:20:25,739 - src.exploration.time_analysis - INFO - Analyzed sentiment by month
+2025-05-12 12:20:25,739 - src.exploration.time_analysis - INFO - Completed all time-based analyses
+2025-05-12 12:20:25,740 - __main__ - INFO - Running user analysis
+2025-05-12 12:20:26,153 - src.exploration.user_analysis - INFO - UserAnalyzer initialized with 1600000 tweets from 659775 users
+2025-05-12 12:20:26,444 - src.exploration.user_analysis - INFO - Found 659775 unique users
+2025-05-12 12:20:27,323 - src.exploration.user_analysis - INFO - Retrieved top 10 users by frequency
+2025-05-12 12:20:34,996 - src.exploration.user_analysis - INFO - Analyzed sentiment patterns for top 10 users
+2025-05-12 12:20:41,654 - src.exploration.user_analysis - INFO - Calculated sentiment ratios for 659775 users
+2025-05-12 12:20:47,775 - src.exploration.user_analysis - INFO - Calculated sentiment ratios for 659775 users
+2025-05-12 12:20:47,803 - src.exploration.user_analysis - INFO - Found 16642 mostly positive users and 14938 mostly negative users
+2025-05-12 12:20:47,828 - src.exploration.user_analysis - INFO - Completed all user-based analyses
+2025-05-12 12:20:47,830 - __main__ - INFO - Saving processed data
+2025-05-12 12:21:02,026 - __main__ - INFO - Data exploration completed in 0:03:38.217141

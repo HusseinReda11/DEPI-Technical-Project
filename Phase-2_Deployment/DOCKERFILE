@@ -1,0 +1,32 @@
+# Use the official Python image as a base
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=8080
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Download NLTK data and transformer models
+RUN python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')" && \
+    python -c "from transformers import DistilBertTokenizer; DistilBertTokenizer.from_pretrained('distilbert-base-uncased')"
+
+# Copy application code
+COPY . .
+
+# Create directories and ensure they have correct permissions
+RUN mkdir -p models/checkpoints && \
+    chmod -R 755 .
+
+# Make sure the checkpoint file is in the right place
+# You would typically mount this volume in production
+# or include your model file in the Docker build context
+
+# Run the application
+CMD ["python", "server.py"]

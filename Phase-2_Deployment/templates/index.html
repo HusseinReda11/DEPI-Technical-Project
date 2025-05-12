@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <meta name="description" content="Analyze the sentiment of tweets using AI">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Sentiment Analysis</h1>
+        <p class="subtitle">Analyze the sentiment of any text using AI</p>
+    </div>
+    
+    <div id="container">
+        <div class="input-area">
+            <label for="tweet-input">Enter text to analyze:</label>
+            <textarea id="tweet-input" placeholder="Type or paste your text here..."></textarea>
+        </div>
+        
+        <div class="button-container">
+            <button id="analyze-button">Analyze Sentiment</button>
+        </div>
+        
+        <div id="result">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Powered by DistilBERT fine-tuned on Twitter data</p>
+    </div>
+</body>
+</html>
