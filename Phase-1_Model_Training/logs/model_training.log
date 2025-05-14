@@ -26,3 +26,12 @@ Epoch 3/3
 2025-05-12 06:07:22,149 - src.training.trainer - INFO - Epoch 3 Validation Loss: 0.5412, Accuracy: 75.00%
 2025-05-12 06:07:22,559 - src.training.trainer - INFO - Confusion matrix saved to g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\reports\figures\confusion_matrix.png
 2025-05-12 06:07:23,055 - src.training.trainer - INFO - Learning curves saved to g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\reports\figures\learning_curves.png
+2025-05-14 23:04:28,475 - __main__ - INFO - Using model from g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_2_20250512_060705.pt
+2025-05-14 23:04:28,500 - src.inference.model_inference - INFO - Loading model from g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_2_20250512_060705.pt
+2025-05-14 23:04:36,133 - src.inference.model_inference - INFO - Model loaded successfully
+2025-05-14 23:04:36,133 - src.inference.model_inference - INFO - Making predictions on 1 texts
+2025-05-14 23:04:36,610 - __main__ - INFO - Text: This is good
+2025-05-14 23:04:36,610 - __main__ - INFO - Sentiment: Positive
+2025-05-14 23:11:39,111 - src.inference.model_inference - INFO - Loading model from g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_2_20250512_060705.pt
+2025-05-14 23:11:40,993 - src.inference.model_inference - INFO - Model loaded successfully
+2025-05-14 23:11:40,994 - src.inference.model_inference - INFO - Making predictions on 1 texts

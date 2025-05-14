@@ -1,0 +1,3 @@
+2025-05-14 23:11:39,047 - __main__ - INFO - Using model from g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-1_Model_Training\models\checkpoint_epoch_2_20250512_060705.pt
+2025-05-14 23:11:41,226 - __main__ - INFO - Text: This is good
+2025-05-14 23:11:41,228 - __main__ - INFO - Sentiment: Positive

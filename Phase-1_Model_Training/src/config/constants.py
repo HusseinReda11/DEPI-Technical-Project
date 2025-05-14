@@ -13,6 +13,7 @@ FIGURES_DIR: Path = REPORTS_DIR / "figures"
 MODEL_DIR: Path = PHASE_DIR / "models"
 LOGS_DIR: Path = PHASE_DIR / "logs"
 TENSORBOARD_DIR: Path = LOGS_DIR / "tensorboard"
+PREDICTIONS_LOGS_DIR: Path = LOGS_DIR / "predictions"
 
 # Data settings
 RAW_DATA_URL: str = "raj713335/twittesentimentanalysis"
