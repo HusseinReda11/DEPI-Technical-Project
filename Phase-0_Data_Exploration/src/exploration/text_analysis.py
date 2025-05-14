@@ -332,6 +332,7 @@ class TextAnalyzer:
         logger.info(f"Analyzed {n}-grams: found {len(ngram_df)} unique patterns")
         return ngram_df
 
+
     def run_all_analyses(self, save_figures: bool = True, 
                        keep_stopwords: bool = False) -> Dict[str, Any]:
         """
@@ -353,6 +354,7 @@ class TextAnalyzer:
         all_words_df, positive_words_df, negative_words_df = self.analyze_all_word_frequencies(
             keep_stopwords=keep_stopwords
         )
+        
         results['word_frequencies'] = {
             'all': all_words_df,
             'positive': positive_words_df,
@@ -408,6 +410,9 @@ class TextAnalyzer:
             'trigrams': trigram_df
         }
         
+        plot_top_words(bigram_df, n=50, title="Most Frequent Bigrams", save=save_figures)
+        plot_top_words(trigram_df, n=50, title="Most Frequent Trigrams", save=save_figures)
+        
         # Hashtag analysis
         all_hashtags_df = self.extract_hashtags()
         positive_hashtags_df = self.extract_hashtags(self.positive_df)
@@ -443,6 +448,8 @@ class TextAnalyzer:
             positive_mentions_df, negative_mentions_df, top_n=30, save=save_figures
         )
         results['mention_comparison'] = mention_comparison
+        
+        
         
         # Punctuation analysis
         pos_punct_df, neg_punct_df = self.analyze_punctuation()
