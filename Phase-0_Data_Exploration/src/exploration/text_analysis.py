@@ -34,6 +34,7 @@ from src.utils.plotting import (
     generate_wordcloud, save_figure
 )
 from src.utils.logging_utils import get_logger
+from src.data.data_loader import TwitterDataLoader
 
 # setup logging
 logger = get_logger(__name__)
@@ -323,11 +324,11 @@ class TextAnalyzer:
         # Convert to DataFrame
         ngram_df = pd.DataFrame(
             [(' '.join(k), v) for k, v in ngram_counts.items()],
-            columns=['ngram', 'frequency']
+            columns=['word', 'count']
         )
         
         # Sort by frequency
-        ngram_df = ngram_df.sort_values('frequency', ascending=False).reset_index(drop=True)
+        ngram_df = ngram_df.sort_values('count', ascending=False).reset_index(drop=True)
         
         logger.info(f"Analyzed {n}-grams: found {len(ngram_df)} unique patterns")
         return ngram_df
@@ -346,7 +347,6 @@ class TextAnalyzer:
             Dictionary containing analysis results
         """
         results = {}
-        
         stopwords_status = "with" if keep_stopwords else "without"
         logger.info(f"Running text analyses {stopwords_status} stop words")
         
@@ -410,8 +410,8 @@ class TextAnalyzer:
             'trigrams': trigram_df
         }
         
-        plot_top_words(bigram_df, n=50, title="Most Frequent Bigrams", save=save_figures)
-        plot_top_words(trigram_df, n=50, title="Most Frequent Trigrams", save=save_figures)
+        plot_top_words(bigram_df, n=20, title="Most Frequent Bigrams", save=save_figures, fig_name="top_bigrams")
+        plot_top_words(trigram_df, n=20, title="Most Frequent Trigrams", save=save_figures, fig_name="top_trigrams")
         
         # Hashtag analysis
         all_hashtags_df = self.extract_hashtags()

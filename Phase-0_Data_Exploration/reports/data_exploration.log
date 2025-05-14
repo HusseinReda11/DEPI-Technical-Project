@@ -126,3 +126,165 @@ AttributeError: 'TextAnalyzer' object has no attribute 'extract_hashtags'
 2025-05-12 12:20:47,828 - src.exploration.user_analysis - INFO - Completed all user-based analyses
 2025-05-12 12:20:47,830 - __main__ - INFO - Saving processed data
 2025-05-12 12:21:02,026 - __main__ - INFO - Data exploration completed in 0:03:38.217141
+2025-05-14 23:55:54,300 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-14 23:55:54,325 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-14 23:55:54,907 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-14 23:55:54,907 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-14 23:55:57,831 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-14 23:55:57,831 - src.data.data_loader - INFO - Preprocessing data
+2025-05-14 23:56:05,271 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-14 23:56:05,607 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-14 23:56:05,607 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-14 23:56:05,608 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-14 23:56:05,608 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-14 23:56:05,608 - __main__ - INFO - Running text analysis
+2025-05-14 23:56:05,799 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-14 23:56:05,799 - src.exploration.text_analysis - INFO - Running text analyses without stop words
+2025-05-14 23:56:14,538 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-14 23:56:15,343 - src.exploration.text_analysis - INFO - Extracted 208988 unique words
+2025-05-14 23:56:19,958 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-14 23:56:20,439 - src.exploration.text_analysis - INFO - Extracted 139697 unique words
+2025-05-14 23:56:25,010 - src.exploration.text_analysis - INFO - Removed stop words from word frequencies
+2025-05-14 23:56:25,440 - src.exploration.text_analysis - INFO - Extracted 127138 unique words
+2025-05-14 23:56:25,516 - src.exploration.text_analysis - INFO - Analyzed word frequencies: 208988 total, 139697 positive, 127138 negative
+2025-05-14 23:57:16,850 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-14 23:58:06,217 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-14 23:58:09,222 - __main__ - ERROR - Error during data exploration: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+Traceback (most recent call last):
+  File "g:/Projects/Programming/Python Play Ground/DEPI/Twitter Sentiment Analysis/Phase-0_Data_Exploration/main.py", line 54, in main
+    text_results = text_analyzer.run_all_analyses(
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\exploration\text_analysis.py", line 413, in run_all_analyses
+    plot_top_words(bigram_df, n=50, title="Most Frequent Bigrams", save=save_figures)
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\utils\plotting.py", line 74, in plot_top_words
+    sns.barplot(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 2341, in barplot
+    p = _CategoricalAggPlotter(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 67, in __init__
+    super().__init__(data=data, variables=variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 634, in __init__
+    self.assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 679, in assign_variables
+    plot_data = PlotData(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 58, in __init__
+    frame, names, ids = self._assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 232, in _assign_variables
+    raise ValueError(err)
+ValueError: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+2025-05-15 00:03:39,356 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-15 00:03:39,363 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:03:40,835 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:03:40,836 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:03:44,005 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:03:44,005 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:03:51,661 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:03:51,950 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-15 00:03:51,950 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-15 00:03:51,951 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-15 00:03:51,951 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-15 00:03:51,952 - __main__ - INFO - Running text analysis
+2025-05-15 00:03:52,095 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:04:13,290 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-15 00:04:35,256 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-15 00:04:36,499 - __main__ - ERROR - Error during data exploration: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+Traceback (most recent call last):
+  File "g:/Projects/Programming/Python Play Ground/DEPI/Twitter Sentiment Analysis/Phase-0_Data_Exploration/main.py", line 54, in main
+    text_results = text_analyzer.run_all_analyses(
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\exploration\text_analysis.py", line 414, in run_all_analyses
+    plot_top_words(bigram_df, n=50, title="Most Frequent Bigrams", save=save_figures)
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\utils\plotting.py", line 74, in plot_top_words
+    sns.barplot(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 2341, in barplot
+    p = _CategoricalAggPlotter(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 67, in __init__
+    super().__init__(data=data, variables=variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 634, in __init__
+    self.assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 679, in assign_variables
+    plot_data = PlotData(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 58, in __init__
+    frame, names, ids = self._assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 232, in _assign_variables
+    raise ValueError(err)
+ValueError: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+2025-05-15 00:06:01,370 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-15 00:06:01,374 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:06:01,874 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:06:01,875 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:06:05,391 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:06:05,391 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:06:13,526 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:06:13,919 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-15 00:06:13,919 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-15 00:06:13,919 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-15 00:06:13,920 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-15 00:06:13,920 - __main__ - INFO - Running text analysis
+2025-05-15 00:06:14,113 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:06:37,339 - src.exploration.text_analysis - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-15 00:07:03,425 - src.exploration.text_analysis - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-15 00:07:04,271 - __main__ - ERROR - Error during data exploration: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+Traceback (most recent call last):
+  File "g:/Projects/Programming/Python Play Ground/DEPI/Twitter Sentiment Analysis/Phase-0_Data_Exploration/main.py", line 54, in main
+    text_results = text_analyzer.run_all_analyses(
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\exploration\text_analysis.py", line 414, in run_all_analyses
+    plot_top_words(bigram_df, n=50, title="Most Frequent Bigrams", save=save_figures, fig_name="top_bigrams")
+  File "g:\Projects\Programming\Python Play Ground\DEPI\Twitter Sentiment Analysis\Phase-0_Data_Exploration\src\utils\plotting.py", line 74, in plot_top_words
+    sns.barplot(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 2341, in barplot
+    p = _CategoricalAggPlotter(
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\categorical.py", line 67, in __init__
+    super().__init__(data=data, variables=variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 634, in __init__
+    self.assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_base.py", line 679, in assign_variables
+    plot_data = PlotData(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 58, in __init__
+    frame, names, ids = self._assign_variables(data, variables)
+  File "C:\Users\keep_\.conda\envs\depi-env\lib\site-packages\seaborn\_core\data.py", line 232, in _assign_variables
+    raise ValueError(err)
+ValueError: Could not interpret value `word` for `x`. An entry with this name does not appear in `data`.
+2025-05-15 00:10:14,779 - __main__ - INFO - Starting Twitter sentiment analysis data exploration
+2025-05-15 00:10:14,781 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:10:15,288 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:10:15,289 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:10:19,149 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:10:19,150 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:10:28,221 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:10:28,641 - src.data.data_loader - INFO - Dataset statistics calculated: 1600000 tweets, 659775 unique users
+2025-05-15 00:10:28,641 - __main__ - INFO - Dataset statistics: 1600000 tweets, 659775 users
+2025-05-15 00:10:28,642 - __main__ - INFO - Date range: 2009-04-06 22:19:45 to 2009-06-25 10:28:31
+2025-05-15 00:10:28,642 - __main__ - INFO - Sentiment distribution: {0: 50.0, 4: 50.0}
+2025-05-15 00:10:28,642 - __main__ - INFO - Running text analysis
+2025-05-15 00:10:28,832 - src.exploration.text_analysis - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:13:20,641 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:13:21,149 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:13:21,150 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:13:24,183 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:13:24,183 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:13:32,513 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:14:23,834 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:14:24,354 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:14:24,355 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:14:27,200 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:14:27,200 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:14:34,478 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:14:34,629 - __main__ - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:14:56,277 - __main__ - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-15 00:15:16,636 - __main__ - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-15 00:16:13,792 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:16:14,293 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:16:14,293 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:16:17,151 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:16:17,151 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:16:24,761 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:16:24,948 - __main__ - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:16:46,657 - __main__ - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-15 00:17:09,674 - __main__ - INFO - Analyzed 3-grams: found 8824501 unique patterns
+2025-05-15 00:17:45,160 - src.data.data_loader - INFO - Downloading dataset: raj713335/twittesentimentanalysis
+2025-05-15 00:17:46,224 - src.data.data_loader - INFO - Dataset downloaded to: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1
+2025-05-15 00:17:46,224 - src.data.data_loader - INFO - Loading data from: C:\Users\keep_\.cache\kagglehub\datasets\raj713335\twittesentimentanalysis\versions\1/tweets.csv
+2025-05-15 00:17:49,101 - src.data.data_loader - INFO - Data loaded successfully with 1600000 rows
+2025-05-15 00:17:49,102 - src.data.data_loader - INFO - Preprocessing data
+2025-05-15 00:17:57,132 - src.data.data_loader - INFO - Data preprocessing completed
+2025-05-15 00:17:57,280 - __main__ - INFO - TextAnalyzer initialized with 1600000 tweets
+2025-05-15 00:18:19,352 - __main__ - INFO - Analyzed 2-grams: found 6536180 unique patterns
+2025-05-15 00:18:42,348 - __main__ - INFO - Analyzed 3-grams: found 8824501 unique patterns
