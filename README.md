@@ -254,10 +254,7 @@ docker run -p 8080:8080 sentiment-analysis-app
 
 Our fine-tuned DistilBERT model achieves the following performance metrics on the test set:
 
-- **Accuracy**: 92.5%
-- **F1 Score**: 0.923
-- **Precision**: 0.918
-- **Recall**: 0.929
+- **Accuracy**: 86.90%
 
 ## Data
 
