@@ -7,9 +7,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pandas as pd
-from typing import List, Tuple, Set, Optional, Dict, Any
+from typing import Optional
 from wordcloud import WordCloud
-import os
 from pathlib import Path
 import sys
 

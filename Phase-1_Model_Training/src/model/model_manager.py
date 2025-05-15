@@ -2,13 +2,9 @@
 Model management utilities for fine-tuning DistilBERT.
 """
 import torch
-import torch.nn as nn
 from transformers import DistilBertForSequenceClassification, DistilBertTokenizer, get_linear_schedule_with_warmup
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Dict, Any, Tuple
 import os
-from pathlib import Path
-import logging
-import mlflow
 from datetime import datetime
 
 from ..utils.logging_utils import get_logger

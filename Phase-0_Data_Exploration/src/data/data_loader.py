@@ -5,7 +5,7 @@ This module handles all data loading, preprocessing and basic transformations.
 """
 import kagglehub
 import pandas as pd
-from typing import Optional, Tuple, List
+from typing import Optional, Tuple
 from pathlib import Path
 import sys
 

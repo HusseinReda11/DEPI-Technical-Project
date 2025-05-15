@@ -5,10 +5,9 @@ This module focuses on analyzing temporal patterns in tweet sentiment,
 such as sentiment distribution by hour, day, or month.
 """
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from typing import Optional, Dict, List, Any, Tuple
+from typing import Dict, Any, Tuple
 from pathlib import Path
 import sys
 

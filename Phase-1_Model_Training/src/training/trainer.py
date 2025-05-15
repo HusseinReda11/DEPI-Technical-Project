@@ -2,13 +2,11 @@
 Training utilities for fine-tuning DistilBERT.
 """
 import torch
-import torch.nn as nn
 import numpy as np
 import time
 from datetime import datetime
 import mlflow
 from typing import Dict, Any, List, Tuple, Optional
-import gc
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 from transformers import DistilBertForSequenceClassification

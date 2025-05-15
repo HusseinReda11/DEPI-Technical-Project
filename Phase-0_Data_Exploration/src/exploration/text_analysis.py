@@ -8,10 +8,8 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 from nltk import ngrams
-import re
-from typing import List, Dict, Tuple, Optional, Set, Any
+from typing import Dict, Tuple, Optional, Any
 import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 import sys
 import nltk
@@ -34,7 +32,6 @@ from src.utils.plotting import (
     generate_wordcloud, save_figure
 )
 from src.utils.logging_utils import get_logger
-from src.data.data_loader import TwitterDataLoader
 
 # setup logging
 logger = get_logger(__name__)

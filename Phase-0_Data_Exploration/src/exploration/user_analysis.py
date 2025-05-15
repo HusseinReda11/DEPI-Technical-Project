@@ -5,10 +5,9 @@ This module focuses on analyzing user patterns in tweets, including
 top users by frequency and user sentiment patterns.
 """
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from typing import Optional, Dict, List, Any, Tuple
+from typing import Dict, List, Any, Tuple
 from pathlib import Path
 import sys
 
